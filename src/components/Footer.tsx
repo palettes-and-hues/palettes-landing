@@ -39,9 +39,9 @@ const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center font-inter text-xs md:text-sm"
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.2 }}
             >
-              <Coffee className="w-4 h-4 mr-1 md:mr-2" />
+              <Coffee className="w-5 h-5 md:w-6 md:h-6" />
               <span>Buy me a coffee</span>
             </motion.a>
           </div>

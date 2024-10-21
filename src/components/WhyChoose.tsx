@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Focus, Clock, UserCheck, Lock } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { db } from '../firebase';
-import { collection, addDoc } from 'firebase/firestore';
 
 const reasons = [
   {
@@ -41,14 +39,22 @@ const WhyChoose: React.FC = () => {
     setSubmitStatus('idle');
 
     try {
-      await addDoc(collection(db, 'subscriptions'), {
-        email,
-        timestamp: new Date(),
+      const response = await fetch('https://formspree.io/f/mbljloge', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
       });
-      setSubmitStatus('success');
-      setEmail('');
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setEmail('');
+      } else {
+        setSubmitStatus('error');
+      }
     } catch (error) {
-      console.error('Error adding document: ', error);
+      console.error('Error submitting form: ', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
