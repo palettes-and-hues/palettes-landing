@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Chroma Palette is a powerful Chrome extension that instantly extracts the dominant color palette from any webpage.
+          Chroma Palette is a powerful Chrome extension that instantly extracts the dominant color palette from visible area of any webpage or pick specific colors using a uploaded image, it also let's you manage and maintain history of your extracted color palettes.
         </motion.p>
         <motion.a 
           href="https://chromewebstore.google.com/detail/chroma-palette-%F0%9F%8E%A8/miokoikjlpbhhfepkneagdjmgakendep"
