@@ -19,15 +19,15 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Chroma Palette is a powerful Chrome extension that instantly extracts the dominant color palette from visible area of any webpage or pick specific colors using a uploaded image, it also let's you manage and maintain history of your extracted color palettes.
+          Palettes & Hues 🎨 is a powerful Chrome extension that instantly extracts the dominant color palette from visible area of any webpage or pick specific colors using a uploaded image, it also let's you manage and maintain history of your extracted color palettes.
         </motion.p>
         <motion.a 
-          href="https://chromewebstore.google.com/detail/chroma-palette-%F0%9F%8E%A8/miokoikjlpbhhfepkneagdjmgakendep"
+          href="https://chromewebstore.google.com/detail/palettes-hues-%F0%9F%8E%A8/miokoikjlpbhhfepkneagdjmgakendep"
           className="btn inline-block font-inter text-sm md:text-base"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          Get Chroma Palette
+          Get Palettes & Hues 🎨
         </motion.a>
       </div>
       <div className="absolute top-0 left-0 w-full h-full">

@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            © {new Date().getFullYear()} Chroma Palette. All rights reserved.
+            © {new Date().getFullYear()} Palettes & Hues 🎨. All rights reserved.
           </motion.p>
           <div className="flex space-x-4 md:space-x-6">
             <motion.a 

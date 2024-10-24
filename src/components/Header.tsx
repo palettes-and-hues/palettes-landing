@@ -18,14 +18,14 @@ const Header: React.FC = () => {
           whileHover={{ scale: 1.05 }}
         >
           <span className="font-playfair">
-            🎨  Chroma Palette
+            Palettes & Hues 🎨
           </span>
         </motion.h1>
         <nav className="hidden md:flex space-x-6 font-inter">
           <motion.a href="#features" className="hover:text-blue-400 transition-colors duration-300" whileHover={{ scale: 1.1 }}>Features</motion.a>
           <motion.a href="#why-choose" className="hover:text-purple-400 transition-colors duration-300" whileHover={{ scale: 1.1 }}>Why Choose</motion.a>
           <motion.a 
-            href="https://chromewebstore.google.com/detail/chroma-palette-%F0%9F%8E%A8/miokoikjlpbhhfepkneagdjmgakendep"
+            href="https://chromewebstore.google.com/detail/palettes-hues-%F0%9F%8E%A8/miokoikjlpbhhfepkneagdjmgakendep"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
             <div className="flex flex-col space-y-4 font-inter">
               <a href="#features" className="hover:text-blue-400 transition-colors duration-300" onClick={() => setIsMenuOpen(false)}>Features</a>
               <a href="#why-choose" className="hover:text-purple-400 transition-colors duration-300" onClick={() => setIsMenuOpen(false)}>Why Choose</a>
-              <a href="https://chromewebstore.google.com/detail/chroma-palette-%F0%9F%8E%A8/miokoikjlpbhhfepkneagdjmgakendep" className="inline-block" onClick={() => setIsMenuOpen(false)}>Download</a>
+              <a href="https://chromewebstore.google.com/detail/palettes-hues-%F0%9F%8E%A8/miokoikjlpbhhfepkneagdjmgakendep" className="inline-block" onClick={() => setIsMenuOpen(false)}>Download</a>
             </div>
           </motion.nav>
         )}

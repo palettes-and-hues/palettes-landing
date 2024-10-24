@@ -65,7 +65,7 @@ const WhyChoose: React.FC = () => {
     <section id="why-choose" className="py-12 md:py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl md:text-3xl mb-8 md:mb-12 text-center text-gradient font-playfair">
-          Why Choose Chroma Palette?
+          Why Choose Palettes & Hues 🎨?
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12">
           {reasons.map((reason, index) => (
@@ -96,7 +96,7 @@ const WhyChoose: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <h3 className="text-xl md:text-2xl mb-3 md:mb-4 text-center text-gradient font-playfair">
-            Get Chroma Palette Today
+            Get Palettes & Hues 🎨 Today
           </h3>
           <p className="text-sm md:text-base text-center mb-4 md:mb-6 text-gray-300 font-inter font-light">
             Start capturing colors and finding inspiration with just one click.
