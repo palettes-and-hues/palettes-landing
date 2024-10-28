@@ -237,7 +237,6 @@ const WhyChoose: React.FC = () => {
 
       <p className="text-xs md:text-sm text-gray-400 text-center mt-4">Ready to use on <span className="text-[#2563EB]">Chrome</span>, <span className="text-[#2563EB]">Arc</span>, <span className="text-[#2563EB]">Brave</span>, <span className="text-[#2563EB]">Edge</span> and all modern Chromium browsers. No additional setup needed! 🚀</p>
 
-
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float"></div>

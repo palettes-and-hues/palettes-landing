@@ -23,6 +23,7 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <motion.a href="#features" className="text-gray-400 hover:text-white transition-colors" whileHover={{ scale: 1.05 }}>Features</motion.a>
           <motion.a href="#why-choose" className="text-gray-400 hover:text-white transition-colors" whileHover={{ scale: 1.05 }}>Why Choose</motion.a>
+          <motion.a href="#game" className="text-gray-400 hover:text-white transition-colors" whileHover={{ scale: 1.05 }}>Play Game</motion.a>
           <motion.a
             href="https://chromewebstore.google.com/detail/palettes-hues-%F0%9F%8E%A8/miokoikjlpbhhfepkneagdjmgakendep"
             className="btn"
@@ -46,6 +47,7 @@ const Header: React.FC = () => {
           <div className="flex flex-col space-y-4 p-4">
             <a href="#features" className="text-gray-400 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Features</a>
             <a href="#why-choose" className="text-gray-400 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Why Choose</a>
+            <a href="#game" className="text-gray-400 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Play Game</a>
             <a href="https://chromewebstore.google.com/detail/palettes-hues-%F0%9F%8E%A8/miokoikjlpbhhfepkneagdjmgakendep" className="btn text-center" onClick={() => setIsMenuOpen(false)}>Install Now</a>
           </div>
         </motion.nav>
