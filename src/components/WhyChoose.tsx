@@ -15,7 +15,8 @@ import {
   Clock,
   Shield,
   Sparkles,
-  Laptop
+  Laptop,
+  Shuffle
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
