@@ -216,7 +216,7 @@ const WhyChoose: React.FC = () => {
               whileTap={{ scale: 0.95 }}
               disabled={isSubmitting}
             >
-              {isSubmitting ? 'Subscribing...' : 'Get Early Access'}
+              {isSubmitting ? 'Subscribing...' : 'Subscribe'}
             </motion.button>
           </form>
           {submitStatus === 'success' && (
