@@ -86,6 +86,12 @@ const features = [
     title: 'Privacy Protection',
     description: 'Local processing ensures your browsing and color data stays private.',
     category: 'Features'
+  },
+  {
+    icon: <Shuffle className="w-10 h-10 md:w-12 md:h-12 text-emerald-400" />,
+    title: 'Random Color Generation',
+    description: 'Get randomly generated palettes to quickly find color inspiration.',
+    category: 'Features'
   }
 ];
 
