@@ -64,9 +64,10 @@ const WhyChoose: React.FC = () => {
   return (
     <section id="why-choose" className="py-12 md:py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-3xl mb-8 md:mb-12 text-center text-gradient font-playfair">
+        <h2 className="text-2xl md:text-3xl mb-8 md:mb-12 text-center font-playfair">
           Why Choose Palettes & Hues 🎨?
         </h2>
+        <h2></h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12">
           {reasons.map((reason, index) => (
             <motion.div
@@ -95,7 +96,7 @@ const WhyChoose: React.FC = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <h3 className="text-xl md:text-2xl mb-3 md:mb-4 text-center text-gradient font-playfair">
+          <h3 className="text-xl md:text-2xl mb-3 md:mb-4 text-center font-playfair">
             Get Palettes & Hues 🎨 Today
           </h3>
           <p className="text-sm md:text-base text-center mb-4 md:mb-6 text-gray-300 font-inter font-light">
@@ -118,9 +119,8 @@ const WhyChoose: React.FC = () => {
             </div>
             <motion.button
               type="submit"
-              className={`btn w-full font-inter text-sm md:text-base ${
-                isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
-              }`}
+              className={`btn w-full font-inter text-sm md:text-base ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               disabled={isSubmitting}
@@ -138,8 +138,13 @@ const WhyChoose: React.FC = () => {
               Oops! Something went wrong. Please try again.
             </p>
           )}
-          <p className="text-xs md:text-sm text-gray-400 text-center mt-4 font-inter font-light">
-            Compatible with Google Chrome, Arc & Chromium based Browsers.
+          <p className="text-xs md:text-sm text-gray-400 text-center mt-4">
+            Ready to use on{' '}
+            <span className="text-[#2563EB]">Chrome</span>,{' '}
+            <span className="text-[#2563EB]">Arc</span>,{' '}
+            <span className="text-[#2563EB]">Brave</span>,{' '}
+            <span className="text-[#2563EB]">Edge</span>{' '}
+            and all modern Chromium browsers. No additional setup needed! 🚀
           </p>
         </motion.div>
       </div>

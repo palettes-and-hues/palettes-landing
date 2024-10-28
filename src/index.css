@@ -8,26 +8,30 @@
   }
   
   body {
-    @apply bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen font-inter;
+    @apply bg-[#0A0A0A] text-white min-h-screen font-inter;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-playfair font-bold;
+    @apply font-inter font-bold;
   }
 }
 
 @layer components {
   .glass {
-    @apply bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-white border-opacity-20 shadow-xl;
+    @apply bg-[#1A1A1A] border border-[#2A2A2A] shadow-xl;
   }
   
   .btn {
-    @apply glass px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-opacity-20 hover:scale-105 active:scale-95;
+    @apply bg-[#2563EB] hover:bg-[#1E40AF] px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 active:scale-95 text-white;
+  }
+
+  .btn-secondary {
+    @apply bg-[#1A1A1A] hover:bg-[#2A2A2A] border border-[#2A2A2A] px-6 py-3 rounded-lg font-semibold transition-all duration-300;
   }
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#2563EB] to-[#1E40AF];
 }
 
 .animate-float {

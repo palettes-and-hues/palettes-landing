@@ -3,37 +3,48 @@ import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
   return (
-    <section className="py-12 md:py-20 px-4 relative overflow-hidden">
+    <section className="py-20 px-4 relative overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.h2 
-          className="text-3xl md:text-5xl lg:text-6xl mb-4 md:mb-6 text-gradient font-playfair"
+          className="text-4xl md:text-6xl lg:text-7xl mb-6 font-bold tracking-tight"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Capture Colors from the Web
+          Capture Colors from
+          <span className="text-[#2563EB]"> the Web</span>
         </motion.h2>
         <motion.p 
-          className="text-lg md:text-xl mb-6 md:mb-8 text-gray-300 font-inter font-light"
+          className="text-lg md:text-xl mb-8 text-gray-400 max-w-2xl mx-auto leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Palettes & Hues 🎨 is a powerful Chrome extension that instantly extracts the dominant color palette from visible area of any webpage or pick specific colors using a uploaded image, it also let's you manage and maintain history of your extracted color palettes.
+          A powerful Chrome extension that instantly extracts the dominant color palette from any webpage. Perfect for designers and developers.
         </motion.p>
-        <motion.a 
-          href="https://chromewebstore.google.com/detail/palettes-hues-%F0%9F%8E%A8/miokoikjlpbhhfepkneagdjmgakendep"
-          className="btn inline-block font-inter text-sm md:text-base"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+        <motion.div
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Get Palettes & Hues 🎨
-        </motion.a>
+          <a 
+            href="https://chromewebstore.google.com/detail/palettes-hues-%F0%9F%8E%A8/miokoikjlpbhhfepkneagdjmgakendep"
+            className="btn w-full sm:w-auto"
+          >
+            Install Extension
+          </a>
+          <a 
+            href="#features"
+            className="btn-secondary w-full sm:w-auto"
+          >
+            Learn More
+          </a>
+        </motion.div>
       </div>
-      <div className="absolute top-0 left-0 w-full h-full">
-        <div className="absolute top-1/4 left-1/4 w-32 md:w-64 h-32 md:h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
-        <div className="absolute top-3/4 left-3/4 w-32 md:w-64 h-32 md:h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{ animationDelay: '-2s' }}></div>
-        <div className="absolute top-1/2 left-1/2 w-32 md:w-64 h-32 md:h-64 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{ animationDelay: '-4s' }}></div>
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#2563EB] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#1E40AF] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float" style={{ animationDelay: '-2s' }}></div>
       </div>
     </section>
   );
