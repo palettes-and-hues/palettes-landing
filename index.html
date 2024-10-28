@@ -1,26 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Palettes & Hues 🎨 - Capture Colors from the Web | Chrome Extension</title>
-  <meta name="description" content="Palettes & Hues 🎨 is a powerful Chrome extension that instantly extracts the dominant color palette from any webpage. Perfect for designers and developers." />
-  <meta name="keywords" content="color extraction, web design, chrome extension, color palette, web development" />
-  
+
+  <!-- Primary Meta Tags -->
+  <title>Palettes & Hues 🎨 - AI-Powered Color Extraction | Chrome Extension</title>
+  <meta name="title" content="Palettes & Hues 🎨 - AI-Powered Color Extraction | Chrome Extension">
+  <meta name="description"
+    content="Extract dominant color palettes instantly from any webpage or image. The perfect Chrome extension for designers and developers. Features AI-powered color analysis, real-time extraction, and multiple export formats." />
+  <meta name="keywords"
+    content="color extraction, web design, chrome extension, color palette, web development, AI color analysis, design tools, color picker, hex codes, palette generator" />
+  <meta name="author" content="Palettes & Hues">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://palettesandhues.com/">
+  <meta property="og:title" content="Palettes & Hues 🎨 - AI-Powered Color Extraction">
+  <meta property="og:description"
+    content="Extract dominant color palettes instantly from any webpage or image. The perfect Chrome extension for designers and developers.">
+  <meta property="og:image" content="/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://palettesandhues.com/">
+  <meta property="twitter:title" content="Palettes & Hues 🎨 - AI-Powered Color Extraction">
+  <meta property="twitter:description"
+    content="Extract dominant color palettes instantly from any webpage or image. The perfect Chrome extension for designers and developers.">
+  <meta property="twitter:image" content="/og-image.png">
+
   <!-- Security Headers -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://formspree.io;">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://formspree.io; frame-ancestors 'none';">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="X-Frame-Options" content="DENY">
-  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()">
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-  
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+
+  <!-- Preload Critical Resources -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Palettes & Hues",
+      "applicationCategory": "BrowserApplication",
+      "operatingSystem": "Chrome",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "AI-powered Chrome extension for instant color palette extraction from webpages and images."
+    }
+  </script>
 </head>
+
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
+
 </html>

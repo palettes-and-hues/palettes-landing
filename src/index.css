@@ -5,33 +5,35 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
   body {
-    @apply bg-[#0A0A0A] text-white min-h-screen font-inter;
+    @apply bg-[#0A0A0A] text-white min-h-screen font-sans selection:bg-primary-500/20 selection:text-primary-400;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-inter font-bold;
+    @apply font-display font-bold;
   }
 }
 
 @layer components {
   .glass {
-    @apply bg-[#1A1A1A] border border-[#2A2A2A] shadow-xl;
+    @apply bg-[#1A1A1A] border border-[#2A2A2A] shadow-xl backdrop-blur-sm bg-opacity-80;
   }
   
   .btn {
-    @apply bg-[#2563EB] hover:bg-[#1E40AF] px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 active:scale-95 text-white;
+    @apply bg-primary-600 hover:bg-primary-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 active:scale-95 text-white shadow-lg shadow-primary-600/25 hover:shadow-primary-600/40;
   }
 
   .btn-secondary {
-    @apply bg-[#1A1A1A] hover:bg-[#2A2A2A] border border-[#2A2A2A] px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+    @apply bg-[#1A1A1A] hover:bg-[#2A2A2A] border border-[#2A2A2A] px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg;
   }
-}
 
-.text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#2563EB] to-[#1E40AF];
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-primary-600 animate-gradient;
+  }
 }
 
 .animate-float {
