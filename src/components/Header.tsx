@@ -17,8 +17,8 @@ const Header: React.FC = () => {
           className="text-xl md:text-2xl flex items-center font-bold"
           whileHover={{ scale: 1.05 }}
         >
-          Palettes & Hues {' '}
-          <span className="inline-block align-middle"> 🎨</span>
+          Palettes & Hues&nbsp;
+          <span className="inline-block align-middle">&nbsp;🎨</span>
         </motion.h1>
         <nav className="hidden md:flex items-center space-x-8">
           <motion.a href="#features" className="text-gray-400 hover:text-white transition-colors" whileHover={{ scale: 1.05 }}>Features</motion.a>
