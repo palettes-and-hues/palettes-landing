@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
           A powerful Chrome extension that instantly extracts the dominant color palette from any webpage. Perfect for designers and developers.
         </motion.p>
         <motion.div
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -40,6 +40,29 @@ const Hero: React.FC = () => {
           >
             Learn More
           </a>
+        </motion.div>
+        <motion.div
+          className="flex justify-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <div className="glass p-3 rounded-xl hover:scale-105 transition-transform duration-300">
+            <a 
+              href="https://www.producthunt.com/posts/palettes-hues?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-palettes&#0045;hues" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <img 
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=573474&theme=light" 
+                alt="Palettes & Hues - Extract dominant colors from any webpage!" 
+                width="250" 
+                height="54" 
+                className="rounded-lg"
+              />
+            </a>
+          </div>
         </motion.div>
       </div>
       <div className="absolute inset-0 -z-10">
