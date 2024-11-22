@@ -1,73 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/public/favicon.png" />
+  <link rel="icon" type="image/webp" href="/favicon.webp" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary Meta Tags -->
-  <title>Palettes & Hues 🎨 - Color Extraction | Chrome Extension</title>
-  <meta name="title" content="Palettes & Hues 🎨 - Color Extraction | Chrome Extension">
-  <meta name="description"
-    content="Extract dominant color palettes instantly from any webpage or image. The perfect Chrome extension for designers and developers. Features color analysis, real-time extraction, and multiple export formats." />
-  <meta name="keywords"
-    content="color extraction, web design, chrome extension, color palette, web development, design tools, color picker, hex codes, palette generator" />
+  <title>Palettes & Hues 🎨 | Color Extraction Tools for Designers & Developers</title>
+  <meta name="title" content="Palettes & Hues 🎨 | Color Extraction Tools for Designers">
+  <meta name="description" content="Extract stunning color palettes instantly from any webpage or image. The perfect Chrome extension for designers and developers. Features real-time color analysis, custom palettes, and multiple export formats." />
+  <meta name="keywords" content="color extraction, web design, chrome extension, color palette, web development, design tools, color picker, hex codes, palette generator, color analysis" />
   <meta name="author" content="Palettes & Hues">
   <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://palettes.fyi" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://palettes.fyi/">
-  <meta property="og:title" content="Palettes & Hues 🎨 - Chrome Extension for Color Extraction ">
-  <meta property="og:description"
-    content="Extract dominant color palettes instantly from any webpage or image. The perfect Chrome extension for designers and developers.">
+  <meta property="og:title" content="Palettes & Hues 🎨 | Color Extraction Tools for Designers">
+  <meta property="og:description" content="Extract stunning color palettes instantly from any webpage or image. The perfect Chrome extension for designers and developers.">
+  <meta property="og:image" content="https://palettes.fyi/og-image.webp">
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://palettes.fyi/">
-  <meta property="twitter:title" content="Palettes & Hues 🎨 - Color Extraction">
-  <meta property="twitter:description"
-    content="Extract dominant color palettes instantly from any webpage or image. The perfect Chrome extension for designers and developers.">
-  <meta property="twitter:image" content="/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bymayanksingh">
+  <meta name="twitter:creator" content="@bymayanksingh">
+  <meta name="twitter:title" content="Palettes & Hues 🎨 | Color Extraction Tools">
+  <meta name="twitter:description" content="Extract stunning color palettes instantly from any webpage or image. The perfect Chrome extension for designers and developers.">
+  <meta name="twitter:image" content="https://palettes.fyi/og-image.webp">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- Security Headers -->
-  <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://formspree.io; frame-ancestors 'none';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://formspree.io; frame-ancestors 'none';">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="X-Frame-Options" content="DENY">
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()">
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
 
-  <!-- Preload Critical Resources -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
-    rel="stylesheet">
-
-  <!-- Structured Data -->
+  <!-- Schema.org Markup -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Palettes & Hues",
-      "applicationCategory": "BrowserApplication",
+      "applicationCategory": "DesignApplication",
       "operatingSystem": "Chrome",
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
       },
-      "description": "Chrome extension for instant color palette extraction from webpages and images."
+      "description": "Chrome extension for instant color palette extraction from webpages and images.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "156"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Mayank Singh",
+        "url": "https://github.com/bymayanksingh"
+      }
     }
   </script>
 </head>
 
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+  <script type="module" src="/src/main.tsx" async></script>
 </body>
-
 </html>
